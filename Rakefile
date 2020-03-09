@@ -8,3 +8,6 @@ require_relative './config/environment'
 task :console do
   Pry.start
 end
+
+ActiveRecord::Base.logger = Logger.new(STDOUT)
+ActiveRecord::Migration.verbose = true
