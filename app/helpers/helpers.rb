@@ -7,6 +7,7 @@ class Helpers
 
   def self.is_logged_in?(hash)
     hash.has_key?(:user_id)
+
   end
-  
+
 end
